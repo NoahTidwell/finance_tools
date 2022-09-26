@@ -2,7 +2,7 @@ buyPrice = float(input("At what price did you buy? >"))
 sellPrice = float(input("At what price did you sell? >"))
 
 loss = buyPrice - sellPrice
-decimalLoss = (loss / 100)
+decimalLoss = (loss / buyPrice)
 f_userLoss = format(decimalLoss, ".2%")
 
 gainNeeded = (1 / (1 - decimalLoss)) - 1
